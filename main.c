@@ -16,8 +16,6 @@ int main() {
 	imgPosCell **segmentsArr;
 	char fileName1[MAX_FILE_NAME_LENGTH], fileName2[MAX_FILE_NAME_LENGTH];
 
-	/************************ check question 1+2+3 ***************************/
-	printf("/******************* Check for question 1+2 *******************/\n");
 	printf("Pls enter the amount of rows and cols you want:\n");
 	scanf("%d %d", &rows, &cols);
 	printf("Pls enter your threshold:\n");
@@ -37,7 +35,6 @@ int main() {
 
 	newImg = colorSegments(img, segmentsArr, size);
 
-	printf("Your image after question 3: \n");
 	printImage(newImg);
 	printf("\n");
 
@@ -45,8 +42,6 @@ int main() {
 	freeImage(newImg);
 	freeSegmentsLinkedListArr(segmentsArr, size);
 
-	/************************ check question 4 ***************************/
-	printf("/******************* Check for question 4: *******************/\n");
 	printf("Pls enter the name of the PGM file:\n");
 	scanf("%s", fileName1);
 
